@@ -1,0 +1,147 @@
+body {
+  font-family: sans-serif;
+}
+
+.btn {
+  border: none;
+  color: black;
+  padding: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 6px 8px;
+}
+
+.btn-secondary {
+  background-color: #7bd5f5;
+}
+
+.btn-operators {
+  background-color: #fcd0a1;
+}
+
+.btn-equals {
+  background-color: #7678ED;
+}
+
+.btn-AC {
+  background-color: #1A936F;
+}
+
+.calculator {
+  display: grid;
+  width: 35%;
+  padding: 15px;
+  margin: auto;
+  margin-top: 20px;
+  border: solid black 2px;
+  border-radius: 5px;
+  background-color: #f5ebe0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Display Display Display Display"
+    "AC AC AC operators"
+    "numbers numbers numbers operators"
+    "numbers numbers numbers operators"
+    "numbers numbers numbers operators"
+    "zero zero decimal equals";
+}
+
+.AC {
+  grid-area: AC;
+}
+
+.zero {
+  grid-area: zero;
+  width: 95%;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  grid-area: numbers;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    "."
+    "."
+    ".";
+  grid-area: operators;
+}
+
+.equals {
+  grid-area: equals;
+  width: 92%;
+}
+
+.decimal {
+  grid-area: decimal;
+  width: 92%;
+}
+
+.Display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "number-list number-list"
+    "display-string current-number";
+  grid-area: Display;
+}
+
+.number-list {
+  grid-area: number-list;
+  border: solid black 2px;
+  padding-left: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 8px;
+}
+.current-number {
+  grid-area: current-number;
+  border: solid black 2px;
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 8px;
+}
+.display-string {
+  grid-area: display-string;
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/*Grid layout created from https://grid.layoutit.com/?id=bTSHz5W*/
+
+.block {
+  display: block;
+  width: 98%;
+  border: none;
+  padding: 14px 10px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+}

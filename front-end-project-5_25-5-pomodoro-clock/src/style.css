@@ -1,0 +1,68 @@
+#clock-box {
+  background: white;
+  padding: 1em;
+  display: flex;
+}
+
+.box {
+  background: #f0f8ff;
+  width: 50%;
+}
+
+#timer-box {
+  border: 6px solid #2e4d90;
+  display: grid;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+
+#timer-box > h4 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#break-box {
+  border: 6px solid #2e4d90;
+  margin: 10px;
+  width: 25%;
+  height: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#session-box {
+  border: 6px solid #2e4d90;
+  margin: 10px;
+  width: 25%;
+  height: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  color: black;
+  font-size: 14px;
+  background-color: #96d4d4;
+  border-color: #2e4d90;
+  position: relative;
+  left: 25%;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.btn-outline-secondary {
+  color: black;
+  font-size: 14px;
+  background-color: #cae9f5;
+  border-color: #2e4d90;
+  margin: 0.5rem;
+}
+
+#break-length {
+  margin-bottom: 1rem;
+}
